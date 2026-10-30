@@ -2,9 +2,8 @@
 
 MAC which stands for Message Authentication Code, works as a code which verifies Authority of incoming request.
 for example in ISO8583 protocol, many of it's datas are raw so anybody can see them and use them, hackers can pass fake data to server. how server knows which request is real and which is fake? This is where a simple and short code can helps server to decide it.
-> for example server knows request with code 4127 is valid so it only accepts requests which contain this code.
-
-## if anyody can see the request and server only asnwers to a specified code then can't the hackers see the correct code and use it?
+- for example server knows request with code 4127 is valid so it only accepts requests which contain this code.
+if anyody can see the request and server only asnwers to a specified code then can't the hackers see the correct code and use it?
 Yes! they actully can, that is why we dont use simple raw codes, instead each request code is calculated via complex mathematical operations beside a secrect key.
 
 ## Quick Overview
