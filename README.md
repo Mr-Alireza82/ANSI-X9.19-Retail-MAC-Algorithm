@@ -1,5 +1,4 @@
 # ANSI-X9.19-Retail-MAC-Algorithm
-## ANSI X9.19 Retail MAC Algorithm with mathmatical examples and java impementation code
 
 MAC which stands for Message Authentication Code, works as a code which verifies Authority of incoming request.
 for example in ISO8583 protocol, many of it's datas are raw so anybody can see them and use them, hackers can pass fake data to server. how server knows which request is real and which is fake? This is where a simple and short code can helps server to decide it.
