@@ -2,8 +2,6 @@
 
 > A technical guide to the ANSI X9.19 Retail Message Authentication Code (MAC) algorithm, its underlying DES operations, mathematical representation, and practical application in payment systems such as ISO 8583.
 
-**Topics:** Cryptography · DES · XOR · CBC-MAC · ISO 8583 · Payment Security
-
 ---
 
 ## 1. Introduction — Why Do We Need a MAC?
@@ -17,7 +15,7 @@ Terminal:  12345678
 STAN:      000123
 ```
 
-The amount represents 10.00 in the applicable currency's minor units.
+The amount represents 1,000 in the applicable currency's minor units.
 
 Now imagine an attacker intercepts this message and changes the amount:
 
@@ -28,7 +26,7 @@ Terminal:  12345678
 STAN:      000123
 ```
 
-The attacker has changed the transaction amount from 10.00 to 90.00.
+The attacker has changed the transaction amount from 1,000 to 9,000.
 
 If the receiving system has no mechanism to verify message integrity, it may have no way to detect this modification at the message level.
 
@@ -59,14 +57,14 @@ The basic process is:
                     |
                     v
              +--------------+
- Secret Key->|  MAC Function|
+ Secret Key->| MAC Function |
              +--------------+
                     |
                     v
-               MAC Value
+                MAC Value
                     |
                     v
-             Send Message + MAC
+            Send Message + MAC
                     |
                     |
              -------------------
@@ -79,14 +77,14 @@ The basic process is:
                     |
                     v
              +--------------+
- Secret Key->|  MAC Function|
+ Secret Key->| MAC Function |
              +--------------+
                     |
                     v
-             Expected MAC
+              Expected MAC
                     |
                     v
-             Compare MACs
+              Compare MACs
                     |
               +-----+-----+
               |           |
@@ -196,7 +194,7 @@ Repeat until every message block has been processed.
                  MESSAGE
                     |
                     v
-             Padding & Splitting
+            Padding & Splitting
                     |
                     v
               M1, M2, ... Mn
@@ -207,15 +205,15 @@ Repeat until every message block has been processed.
                     v
         +-------------------------+
         |                         |
-        |   XOR(Mi, H(i-1))       |
+        |     XOR(Mi, H(i-1))       |
         |            |            |
         |            v            |
-        |     DES Encrypt K1      |
+        |      DES Encrypt K1      |
         |            |            |
         |            v            |
         |           Hi            |
         |            |            |
-        |      Next Message       |
+        |       Next Message       |
         |                         |
         +-------------------------+
                     |
