@@ -205,15 +205,15 @@ Repeat until every message block has been processed.
                     v
         +-------------------------+
         |                         |
-        |     XOR(Mi, H(i-1))       |
+        |     XOR(Mi, H(i-1))     |
         |            |            |
         |            v            |
-        |      DES Encrypt K1      |
+        |      DES Encrypt K1     |
         |            |            |
         |            v            |
         |           Hi            |
         |            |            |
-        |       Next Message       |
+        |       Next Message      |
         |                         |
         +-------------------------+
                     |
@@ -539,7 +539,8 @@ Since XOR with zero does not change a value:
 
 ```text
   5041594D454E5431
-⊕ 0000000000000000
+⊕
+  0000000000000000
 --------------------------------
   5041594D454E5431
 ```
