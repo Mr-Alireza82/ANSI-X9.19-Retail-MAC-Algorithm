@@ -936,5 +936,12 @@ Although modern systems should prefer stronger cryptographic constructions, unde
 - [GitHub — Basic Writing and Formatting Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 **Related articles:**
+- [Base Conversion — Bits, Bytes and the Four Number Bases](https://github.com/Mr-Alireza82/Base-Conversion)
 - [DES — Detailed Explanation](https://example.com/des)
 - [XOR — Detailed Explanation](https://example.com/xor)
+
+---
+
+## License
+
+[MIT](LICENSE) — free to use, copy, modify and share, including commercially. Keep the copyright notice.
