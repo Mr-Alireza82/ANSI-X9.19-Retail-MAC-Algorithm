@@ -355,7 +355,7 @@ Both operands must have the same size: 8 bytes (64 bits).
 
 We will explore XOR, binary representation, and byte-level calculations in a separate article.
 
-Further reading: [XOR — Detailed Explanation](https://example.com/xor).
+Further reading: [XOR — Exclusive OR](https://github.com/Mr-Alireza82/XOR).
 
 ### 4.3. Initial Vector (IV)
 
@@ -938,7 +938,7 @@ Although modern systems should prefer stronger cryptographic constructions, unde
 **Related articles:**
 - [Base Conversion — Bits, Bytes and the Four Number Bases](https://github.com/Mr-Alireza82/Base-Conversion)
 - [DES — Detailed Explanation](https://example.com/des)
-- [XOR — Detailed Explanation](https://example.com/xor)
+- [XOR — Exclusive OR](https://github.com/Mr-Alireza82/XOR)
 
 ---
 
