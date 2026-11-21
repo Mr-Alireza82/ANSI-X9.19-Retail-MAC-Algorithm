@@ -319,7 +319,7 @@ D(K, E(K, X)) = X
 
 We will explore DES internals, including permutations, Feistel networks, S-boxes, and key scheduling, in a separate article.
 
-Further reading: [DES — Detailed Explanation](https://example.com/des).
+Further reading: [DES and Triple DES — Data Encryption Standard](https://github.com/Mr-Alireza82/DES).
 
 > [!WARNING]
 > DES has only 56 effective key bits and is no longer considered secure against modern attacks. Its use here is for understanding and maintaining legacy payment systems, not for designing new cryptographic systems.
@@ -937,7 +937,7 @@ Although modern systems should prefer stronger cryptographic constructions, unde
 
 **Related articles:**
 - [Base Conversion — Bits, Bytes and the Four Number Bases](https://github.com/Mr-Alireza82/Base-Conversion)
-- [DES — Detailed Explanation](https://example.com/des)
+- [DES and Triple DES — Data Encryption Standard](https://github.com/Mr-Alireza82/DES)
 - [XOR — Exclusive OR](https://github.com/Mr-Alireza82/XOR)
 
 ---
